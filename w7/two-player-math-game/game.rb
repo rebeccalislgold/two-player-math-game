@@ -29,7 +29,7 @@ class Game
 
     def winner
 
-        @players.find{|player| player.dead?}
+        @players.find{|player| !player.dead?}
     
     end
 
